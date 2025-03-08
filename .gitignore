@@ -458,7 +458,6 @@ tramp
 
 # cask packages
 .cask/
-dist/
 
 # Flycheck
 flycheck_*.el
@@ -530,7 +529,7 @@ tmtags
 **/nbproject/Package-*.bash
 build/
 nbbuild/
-dist/
+# dist/
 nbdist/
 .nb-gradle/
 
@@ -717,10 +716,3 @@ composer.lock
 
 
 #custom ignore
-TempToBuildEF
-appsettings.Development.json
-BuildIntDB_local*.ps1
-install-sqlscripts.ps1
-/publish
-/database/dbconfig.json
-dist

@@ -17,5 +17,20 @@ module.exports = merge(common, {
     minimizer: [
       new JsonMinimizerPlugin(),
     ],
+    runtimeChunk: 'single',
+    splitChunks: {
+      maxSize: 250000,
+      chunks: 'all',
+      cacheGroups: {
+        vendors: {
+          test: /[\\/]node_modules[\\/]/,
+          name: 'vendors',
+          // chunks: 'all',
+          maxSize: 10000,
+          reuseExistingChunk: true,
+          idHint: 'vendors',
+        },
+      },
+    },
   },
 });

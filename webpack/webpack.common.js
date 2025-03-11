@@ -11,7 +11,7 @@ module.exports = {
   output: {
     clean: true,
     // CleanPlugin: { cleanStaleWebpackAssets: false },
-    filename: 'main.[hash].js',
+    filename: '[name].[contenthash].js',
     // filename: 'main.js',
     path: path.resolve(rootDir, 'dist'),
     // publicPath: '/',

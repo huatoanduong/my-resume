@@ -3777,6 +3777,11 @@ webpack-sources@^3.2.3:
   resolved "https://registry.yarnpkg.com/webpack-sources/-/webpack-sources-3.2.3.tgz#2d4daab8451fd4b240cc27055ff6a0c2ccea0cde"
   integrity sha512-/DyMEOrDgLKKIG0fmvtz+4dUX/3Ghozwgm6iPp8KRhvn+eQf9+Q7GWxVNMk3+uCPWfdXYC4ExGBckIXdFEfH1w==
 
+webpack-split-chunks@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/webpack-split-chunks/-/webpack-split-chunks-0.2.1.tgz#eb34e607ede38f95a5542e3a87a3ffa4aac22e51"
+  integrity sha512-TT3EDtH3o5SUnB44sC8OjjEOsJWHp1aexY4yJyqdhMP8yoHvW7/ZMeN8i9otAxT8CdHi9AGEhUHKPP10MVKneQ==
+
 webpack@^5.21.2:
   version "5.98.0"
   resolved "https://registry.yarnpkg.com/webpack/-/webpack-5.98.0.tgz#44ae19a8f2ba97537978246072fb89d10d1fbd17"

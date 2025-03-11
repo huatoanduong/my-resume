@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "push-to-gh-pages": "git subtree push --prefix dist origin gh-pages",
     "start": "npx webpack serve --config webpack/webpack.dev.js",
     "build": "npx webpack --config webpack/webpack.prod.js"
   },

@@ -11,10 +11,10 @@ module.exports = {
   output: {
     clean: true,
     // CleanPlugin: { cleanStaleWebpackAssets: false },
-    // filename: 'main.[hash].js',
-    filename: 'main.js',
+    filename: 'main.[hash].js',
+    // filename: 'main.js',
     path: path.resolve(rootDir, 'dist'),
-    publicPath: '/',
+    // publicPath: '/',
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.js', 'jsx', '.json'],

@@ -1,14 +1,12 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import { Provider } from 'zustand';
+import { createRoot } from 'react-dom/client';
 import App from './components/App';
-import createStore from './store';
 
-const store = createStore();
+// Render your React component instead
+const root = createRoot(document.getElementById('root'));
 
-ReactDOM.render(
-  <Provider store={store}>
+root.render(
+  <React.StrictMode>
     <App />
-  </Provider>,
-  document.getElementById('root')
+  </React.StrictMode>,
 );

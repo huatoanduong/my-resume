@@ -1,20 +1,19 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
-const JsonMinimizerPlugin = require('json-minimizer-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const rootDir = path.resolve(__dirname, '..');
 const srcDir = path.resolve(rootDir, 'src');
 
 module.exports = {
-  entry: path.resolve(srcDir, 'index.tsx'),
+  // entry: path.resolve(srcDir, 'index.tsx'),
+  entry: './src/index.tsx',
   output: {
     clean: true,
     // CleanPlugin: { cleanStaleWebpackAssets: false },
     filename: 'main.[hash].js',
     path: path.resolve(rootDir, 'dist'),
-    publicpath: '/',
+    publicPath: '/',
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.js', 'jsx', '.json'],
@@ -52,10 +51,6 @@ module.exports = {
         use: ['style-loader', 'css-loader', 'sass-loader'],
       },
       {
-        test: /\.html$/,
-        use: 'html-loader',
-      },
-      {
         test: /\.json$/,
         type: 'javascript/auto',
         use: ['json-loader'],
@@ -70,19 +65,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './index.html',
     }),
-    new CopyPlugin({
-      patterns: [
-        { from: 'public', to: 'public' },
-      ],
-    }),
-    new MiniCssExtractPlugin({
-      filename: '[name].css',
-    }),
+    // new CopyPlugin({
+    //   patterns: [
+    //     { from: 'public', to: 'public' },
+    //   ],
+    // }),
   ],
-  optimization: {
-    minimize: true,
-    minimizer: [
-      new JsonMinimizerPlugin(),
-    ],
-  },
 };

@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "npx webpack serve --config webpack.dev.js",
-    "build": "npx webpack --config webpack.prod.js"
+    "start": "npx webpack serve --config webpack/webpack.dev.js",
+    "build": "npx webpack --config webpack/webpack.prod.js"
   },
   "dependencies": {
     "react": "^19.0.0",

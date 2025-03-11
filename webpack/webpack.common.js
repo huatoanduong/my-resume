@@ -1,14 +1,35 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
+const JsonMinimizerPlugin = require('json-minimizer-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+
+const rootDir = path.resolve(__dirname, '..');
+const srcDir = path.resolve(rootDir, 'src');
 
 module.exports = {
-  entry: './src/index.tsx',
+  entry: path.resolve(srcDir, 'index.tsx'),
   output: {
-    filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist'),
+    clean: true,
+    // CleanPlugin: { cleanStaleWebpackAssets: false },
+    filename: 'main.[hash].js',
+    path: path.resolve(rootDir, 'dist'),
+    publicpath: '/',
   },
   resolve: {
-    extensions: ['.ts', '.tsx', '.js'],
+    extensions: ['.ts', '.tsx', '.js', 'jsx', '.json'],
+    alias: {
+      '@components': path.resolve(srcDir, 'components'),
+      '@public': path.resolve(srcDir, 'public'),
+      '@config': path.resolve(srcDir, 'config'),
+      '@types': path.resolve(srcDir, 'types'),
+    },
+    modules: [
+      rootDir,
+      srcDir,
+      'node_modules',
+    ],
+
   },
   module: {
     rules: [
@@ -23,6 +44,23 @@ module.exports = {
         use: 'babel-loader',
       },
       {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
+      },
+      {
+        test: /\.s[ac]ss$/,
+        use: ['style-loader', 'css-loader', 'sass-loader'],
+      },
+      {
+        test: /\.html$/,
+        use: 'html-loader',
+      },
+      {
+        test: /\.json$/,
+        type: 'javascript/auto',
+        use: ['json-loader'],
+      },
+      {
         test: /\.(png|jpg|jpeg|gif|svg)$/i,
         type: 'asset/resource',
       },
@@ -30,7 +68,21 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './public/index.html',
+      template: './index.html',
+    }),
+    new CopyPlugin({
+      patterns: [
+        { from: 'public', to: 'public' },
+      ],
+    }),
+    new MiniCssExtractPlugin({
+      filename: '[name].css',
     }),
   ],
+  optimization: {
+    minimize: true,
+    minimizer: [
+      new JsonMinimizerPlugin(),
+    ],
+  },
 };

@@ -23,6 +23,7 @@ module.exports = {
       '@public': path.resolve(srcDir, 'public'),
       '@config': path.resolve(srcDir, 'config'),
       '@types': path.resolve(srcDir, 'types'),
+      '@styles': path.resolve(srcDir, 'styles'),
     },
     modules: [
       rootDir,

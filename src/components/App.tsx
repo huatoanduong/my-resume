@@ -1,14 +1,14 @@
+import LeftPanelSection from "@components/LeftPanelSection";
 import React from 'react';
 import { useStore } from 'store';
+import MainSection from "@components/MainSection";
 
 const App: React.FC = () => {
-  const { count, increase, decrease } = useStore();
 
   return (
     <div className="app">
-      <h1>Counter: {count}</h1>
-      <button onClick={increase}>Increment</button>
-      <button onClick={decrease}>Decrement</button>
+      <LeftPanelSection />
+      <MainSection />
     </div>
   );
 };

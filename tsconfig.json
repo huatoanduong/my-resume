@@ -19,6 +19,7 @@
       "@components/*": ["components/*"],
       "@config/*": ["config/*"],
       "@types/*": ["types/*"],
+      "@styles/*": ["styles/*"],
     }
   },
   "include": ["src"]

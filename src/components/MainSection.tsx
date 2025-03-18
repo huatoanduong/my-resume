@@ -1,14 +1,9 @@
-import React, { ReactNode } from 'react';
+import React, { ReactNode } from "react";
 
-const MainSection = ({  }: MainSectionProps) => {
-
-  return (
-    <div>
-    </div>
-  );
+const MainSection = ({}: MainSectionProps) => {
+  return <div></div>;
 };
 
-export interface MainSectionProps {
-}
+export interface MainSectionProps {}
 
 export default MainSection;

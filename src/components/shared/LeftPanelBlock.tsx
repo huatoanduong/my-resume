@@ -1,7 +1,6 @@
-import React, { ReactNode } from 'react';
+import React, { ReactNode } from "react";
 
 const LeftPanelBlock = ({ title, children }: LeftPanelBlockProps) => {
-
   return (
     <div className="left-panel-block">
       <h1>{title}</h1>

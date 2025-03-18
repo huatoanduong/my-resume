@@ -10,7 +10,7 @@ const getData = async () => {
 
   // const path = jsonData as any as string;
   // const { data } = await axios.get(<string><any>jsonData);
-  const { data } = await axios.get('public/data.json');
+  const { data } = await axios.get("public/data.json");
   // const { data } = await axios.get(import('@public/data.json'));
   // const { data } = await axios.get('@public/data.json');
   // fetch(jsonData)

@@ -1,12 +1,10 @@
-
 import LeftPanelSection from "@components/LeftPanelSection";
-import React, { useEffect } from 'react';
-import { useStoreProfile } from 'store';
+import React, { useEffect } from "react";
+import { useStoreProfile } from "store";
 import MainSection from "@components/MainSection";
 import { useData } from "apis/fetchData";
 
 const App = () => {
-
   const { setProfile } = useStoreProfile();
 
   const { data, isLoading, error } = useData();

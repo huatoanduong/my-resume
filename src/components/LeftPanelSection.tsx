@@ -1,10 +1,9 @@
 import Contact from "@components/Contact";
 import Certificate from "@components/Certificate";
 import Skill from "@components/Skill";
-import React, { ReactNode } from 'react';
+import React, { ReactNode } from "react";
 
 const LeftPanelSection = ({ title, children }: LeftPanelSectionProps) => {
-
   return (
     <div>
       <Contact />

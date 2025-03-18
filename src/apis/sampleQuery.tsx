@@ -1,6 +1,6 @@
-import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
-import React from 'react';
-import axios from 'axios';
+import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
+import React from "react";
+import axios from "axios";
 
 interface Todo {
   id: number;
@@ -12,27 +12,31 @@ export const TodoList = () => {
   const queryClient = useQueryClient();
 
   // Query for fetching todos
-  const { data: todos, isLoading, error } = useQuery({
-    queryKey: ['todos'],
+  const {
+    data: todos,
+    isLoading,
+    error,
+  } = useQuery({
+    queryKey: ["todos"],
     queryFn: async () => {
-      const response = await axios.get<Todo[]>('https://api.example.com/todos');
+      const response = await axios.get<Todo[]>("https://api.example.com/todos");
       return response.data;
     },
   });
 
   // Mutation for adding a todo
   const addTodoMutation = useMutation({
-    mutationFn: (newTodo: Omit<Todo, 'id'>) => {
-      return axios.post('https://api.example.com/todos', newTodo);
+    mutationFn: (newTodo: Omit<Todo, "id">) => {
+      return axios.post("https://api.example.com/todos", newTodo);
     },
     onSuccess: () => {
       // Invalidate and refetch todos after mutation
-      queryClient.invalidateQueries({ queryKey: ['todos'] });
+      queryClient.invalidateQueries({ queryKey: ["todos"] });
     },
   });
 
-  if (isLoading) return (<div>Loading...</div>);
-  if (error) return (<div>Error: {error.message}</div>);
+  if (isLoading) return <div>Loading...</div>;
+  if (error) return <div>Error: {error.message}</div>;
 
   return (
     <div>
@@ -40,14 +44,14 @@ export const TodoList = () => {
       <ul>
         {todos?.map((todo) => (
           <li key={todo.id}>
-            {todo.title} - {todo.completed ? 'Done' : 'Pending'}
+            {todo.title} - {todo.completed ? "Done" : "Pending"}
           </li>
         ))}
       </ul>
       <button
         onClick={() =>
           addTodoMutation.mutate({
-            title: 'New Todo',
+            title: "New Todo",
             completed: false,
           })
         }

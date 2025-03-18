@@ -1,5 +1,5 @@
 import { DeveloperProfile } from "store/profile";
-import { create } from 'zustand';
+import { create } from "zustand";
 
 export interface AppState {
   profile?: DeveloperProfile;

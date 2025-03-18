@@ -16,7 +16,7 @@ const getData = async () => {
   // fetch(jsonData)
 
   // const data = <string><any>jsonData;
-  debugger;
+  // debugger;
   return data;
 };
 

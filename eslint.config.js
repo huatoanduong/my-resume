@@ -21,13 +21,9 @@ export default defineConfig([
   includeIgnoreFile(gitignorePath),
   // globalIgnores(["local_ignore/", "dist/", "webpack/"]),
   // globalIgnores(["/", "!src/",]),
-  globalIgnores([
-    // "/**/*",
-    "!src/**/*",
-  ]),
-  // globalIgnores(["/",]),
+  globalIgnores(["/*", "!/src"]),
   {
-    // files: ["**/*.{js,jsx,ts,tsx}"],
+    files: ["**/*.{js,jsx,ts,tsx}"],
     // files: ["src/**/*.{js,jsx,ts,tsx}"],
     languageOptions: {
       globals: globals.browser,
@@ -91,5 +87,5 @@ export default defineConfig([
       // ],
     },
   },
-  prettier,
+  // prettier,
 ]);

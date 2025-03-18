@@ -1,4 +1,4 @@
-import { DeveloperProfile, developerProfile } from "store/profile";
+import { DeveloperProfile } from "store/profile";
 import { create } from 'zustand';
 
 export interface AppState {
@@ -7,7 +7,7 @@ export interface AppState {
 }
 
 export const useStore = create<AppState>((set, get, store) => ({
-  profile: developerProfile,
+  profile: {} as DeveloperProfile,
   // setProfile: (data: DeveloperProfile) => set((state) => ({ ...state, profile: data })),
   setProfile: (data: DeveloperProfile) => set((state) => ({ profile: data })),
 }));

@@ -1,15 +1,21 @@
 import { createSelector } from 'reselect';
-import { AppState, useStore } from 'store';
+import { AppState } from 'store';
+import { DeveloperProfile, Experience, Skill } from "store/profile";
 
 
-export const profileSelector = (state: AppState) => state.profile;
+export const profileSelector = (state: AppState) => state.profile || {} as DeveloperProfile;
 
-export const workingHistoryStats = createSelector(
+export const experienceSelector = createSelector(
   [profileSelector],
-  (profile) => (profile?.working_history || [])
+  (profile) => (profile?.experience || [] as Experience[])
 );
 
-export const techStacksStats = createSelector(
+export const skillsSelector = createSelector(
   [profileSelector],
-  (profile) => (profile?.tech_stacks || [])
+  (profile) => (profile?.skills || [] as Skill[])
+);
+
+export const contactsSelector = createSelector(
+  [profileSelector],
+  (profile) => (profile?.contact || [] as Skill[])
 );

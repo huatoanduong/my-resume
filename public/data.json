@@ -2,12 +2,28 @@
   "name": "Dương Hứa Toàn (Tony)",
   "title": "Full-stack Developer",
   "summary": "Với 14 năm làm việc trong ngành công nghệ thông tin, đảm nhiệm nhiều vị trí từ phân tích đến phát triển, quản lý đội nhóm, triển khai hệ thống, tôi có hiểu biết sâu sắc về kiến trúc phần mềm và vòng đời phát triển phần mềm (SDLC), giúp tôi học nhanh và dễ dàng các công nghệ mới.",
-  "contact": {
-    "phone": "+84.395.212.532 (VN)",
-    "email": "huatoan.duong@gmail.com",
-    "facebook": "https://www.facebook.com/huatoan.duong",
-    "skype": "go_with_me2005"
-  },
+  "contact": [
+    {
+      "type": "phone",
+      "value": "+84.395.212.532 (VN)"
+    },
+    {
+      "type": "email",
+      "value": "huatoan.duong@gmail.com"
+    },
+    {
+      "type": "facebook",
+      "value": "https://www.facebook.com/huatoan.duong"
+    },
+    {
+      "type": "skype",
+      "value": "go_with_me2005"
+    },
+    {
+      "type": "linkedin",
+      "value": "https://www.linkedin.com/in/huatoanduong/"
+    }
+  ],
   "experience": [
     {
       "position": "Team Leader, Senior Engineer",

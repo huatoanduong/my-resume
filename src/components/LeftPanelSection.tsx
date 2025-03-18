@@ -1,5 +1,5 @@
 import Contact from "@components/Contact";
-import Education from "@components/Education";
+import Certificate from "@components/Certificate";
 import Skill from "@components/Skill";
 import React, { ReactNode } from 'react';
 
@@ -8,7 +8,7 @@ const LeftPanelSection = ({ title, children }: LeftPanelSectionProps) => {
   return (
     <div>
       <Contact />
-      <Education />
+      <Certificate />
       <Skill />
     </div>
   );

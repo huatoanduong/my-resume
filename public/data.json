@@ -24,6 +24,32 @@
       "value": "https://www.linkedin.com/in/huatoanduong/"
     }
   ],
+  "certificates": [
+    {
+      "name": "Bachelor Degree of Information Technology",
+      "institution": "Hoa Sen University",
+      "year": "2012",
+      "additionalNote": "GPA: 3.12 / 4"
+    },
+    {
+      "name": "TOEIC Certificate",
+      "institution": "University of Science, Vietnam National University",
+      "year": "2009",
+      "additionalNote": "700 points"
+    },
+    {
+      "name": "Consolation prize of Hoa Sen University Scientific Research Awards",
+      "institution": "Hoa Sen University",
+      "year": "Aug 2012",
+      "additionalNote": "Consolation Prize"
+    },
+    {
+      "name": "Fundamental of Engineering (FE) (Japanese) Certificate",
+      "institution": "Hoa Sen University",
+      "year": "Oct 2012",
+      "additionalNote": "1295 pts"
+    }
+  ],
   "experience": [
     {
       "position": "Team Leader, Senior Engineer",

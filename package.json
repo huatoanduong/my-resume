@@ -7,7 +7,8 @@
     "start": "yarn serve",
     "serve": "npx webpack serve --config webpack/webpack.dev.js",
     "build": "npx webpack --config webpack/webpack.prod.js",
-    "test-build": "http-server ./host --port 3200 -o"
+    "test-build": "http-server ./build --port 3200 -o",
+    "test-host": "http-server ./host --port 3300 -o Blue%20Simple%20Professional%20CV%20Resume.html"
   },
   "dependencies": {
     "@tanstack/react-query": "^5.68.0",

@@ -1,13 +1,13 @@
 
 import LeftPanelSection from "@components/LeftPanelSection";
 import React, { useEffect } from 'react';
-import { useStore } from 'store';
+import { useStoreProfile } from 'store';
 import MainSection from "@components/MainSection";
 import { useData } from "apis/fetchData";
 
 const App = () => {
 
-  const { setProfile } = useStore();
+  const { setProfile } = useStoreProfile();
 
   const { data, isLoading, error } = useData();
 

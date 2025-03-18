@@ -89,6 +89,7 @@ export interface DeveloperProfile {
   name: string;
   title: string;
   summary: string;
+  certificates: Certificate[];
   experience: Experience[];
   contact: Contact[];
   skills: Skill[];
@@ -104,12 +105,13 @@ export interface Experience {
   technologies: string[];
 }
 
-// export interface Contact {
-//   phone: string;
-//   email: string;
-//   facebook: string;
-//   skype: string;
-// }
+export interface Certificate {
+  name: string;
+  institution: string;
+  year: string;
+  additionalNote: string;
+}
+
 export interface Contact {
   type: string;
   value: string;

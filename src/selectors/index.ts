@@ -1,9 +1,19 @@
 import { createSelector } from 'reselect';
 import { AppState } from 'store';
-import { DeveloperProfile, Experience, Skill } from "store/profile";
+import { Certificate, DeveloperProfile, Experience, Skill } from "store/profile";
 
 
 export const profileSelector = (state: AppState) => state.profile || {} as DeveloperProfile;
+
+export const contactsSelector = createSelector(
+  [profileSelector],
+  (profile) => (profile?.contact || [] as Skill[])
+);
+
+export const certificatesSelector = createSelector(
+  [profileSelector],
+  (profile) => (profile?.certificates || [] as Certificate[])
+);
 
 export const experienceSelector = createSelector(
   [profileSelector],
@@ -13,9 +23,4 @@ export const experienceSelector = createSelector(
 export const skillsSelector = createSelector(
   [profileSelector],
   (profile) => (profile?.skills || [] as Skill[])
-);
-
-export const contactsSelector = createSelector(
-  [profileSelector],
-  (profile) => (profile?.contact || [] as Skill[])
 );

@@ -6,7 +6,7 @@ export interface AppState {
   setProfile: (data: DeveloperProfile) => void;
 }
 
-export const useStore = create<AppState>((set, get, store) => ({
+export const useStoreProfile = create<AppState>((set, get, store) => ({
   profile: {} as DeveloperProfile,
   // setProfile: (data: DeveloperProfile) => set((state) => ({ ...state, profile: data })),
   setProfile: (data: DeveloperProfile) => set((state) => ({ profile: data })),

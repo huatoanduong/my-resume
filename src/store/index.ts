@@ -1,13 +1,13 @@
+import { DeveloperProfile, developerProfile } from "store/profile";
 import { create } from 'zustand';
 
-interface AppState {
-  count: number;
-  increase: () => void;
-  decrease: () => void;
+export interface AppState {
+  profile?: DeveloperProfile;
+  setProfile: (data: DeveloperProfile) => void;
 }
 
-export const useStore = create<AppState>((set) => ({
-  count: 0,
-  increase: () => set((state) => ({ count: state.count + 1 })),
-  decrease: () => set((state) => ({ count: state.count - 1 })),
+export const useStore = create<AppState>((set, get, store) => ({
+  profile: developerProfile,
+  // setProfile: (data: DeveloperProfile) => set((state) => ({ ...state, profile: data })),
+  setProfile: (data: DeveloperProfile) => set((state) => ({ profile: data })),
 }));

@@ -1,57 +1,41 @@
 {
   "name": "Dương Hứa Toàn (Tony)",
   "title": "Full-stack Developer",
-  "summary": "With 14 years working in the IT industry, also in charge of some positions from analyzing to developing, team managing, deploying system, I have a deep understanding about software architecture & SDLC, which enables me to learn new technologies fast and easily. And 90% of my working lifetime is for startups, so I would love to work in a result-oriented and innovative environment. And as the demand of a startup, I have to keep myself updated, and work professionally to deliver my best results to clients. Along with high-demanded fullstack environment, I have forged myself a self-teaching skill that enables me to be adaptive with a changeable and high demand environment.",
-  "tech_stacks": {
-    "C#": "14 years",
-    "MVC – Web API": "10 years",
-    "Entity Framework": "9 years",
-    "Angular & AngularJs": "7 years",
-    ".NET Core": "8 years",
-    "Golang": "2 years",
-    "Winform & Devexpress": "6 years",
-    "React – Redux": "6 years",
-    "Jquery & Javascript": "7 years",
-    "MySQL & SQL Server": "14 years",
-    "MongoDB": "2 years",
-    "Docker": "2.5 years",
-    "CI/CD": "3 years",
-    "Azure Services": "2 years",
-    "Micro-services system structure": "3 years",
-    "Software Architecture Design": "5 years",
-    "Team Lead role": "6 years"
+  "summary": "Với 14 năm làm việc trong ngành công nghệ thông tin, đảm nhiệm nhiều vị trí từ phân tích đến phát triển, quản lý đội nhóm, triển khai hệ thống, tôi có hiểu biết sâu sắc về kiến trúc phần mềm và vòng đời phát triển phần mềm (SDLC), giúp tôi học nhanh và dễ dàng các công nghệ mới.",
+  "contact": {
+    "phone": "+84.395.212.532 (VN)",
+    "email": "huatoan.duong@gmail.com",
+    "facebook": "https://www.facebook.com/huatoan.duong",
+    "skype": "go_with_me2005"
   },
-  "working_history": [
+  "experience": [
     {
-      "period": "Sep 2023 - Now",
-      "company": "GIC Singapore - Onsite - Project READER",
-      "role": "Team Leader, Senior Engineer",
-      "about_project": "Provide a tool for external EIPs to submit data into internal system. Be the first step to validate all the input all the external in notify all stakeholders.",
-      "main_responsibilities": [
-        "Closely work with BA and QA team to provide system design before sprint start.",
-        "Maintain 6-year-old project without any upgrade to the latest tech stack.",
-        "Provide a plan and arrange resources for upcoming releases.",
-        "Be on-call support for partners when needed.",
-        "Support for every release schedule.",
-        "Tracing logs & support partners for production issues.",
-        "Write Engineer specs for new features.",
-        "Preparing the migration plan for integration with new system.",
-        "Propose an upgrade plan for all obsolete features.",
-        "Be Owner Engineer for every feature that team works on."
+      "position": "Team Leader, Senior Engineer",
+      "company": "GIC Singapore",
+      "location": "Singapore",
+      "duration": "Sep 2023 - Hiện tại",
+      "responsibilities": [
+        "Làm việc chặt chẽ với BA và QA để thiết kế hệ thống trước khi bắt đầu sprint.",
+        "Duy trì dự án 6 năm tuổi mà không nâng cấp lên công nghệ mới nhất.",
+        "Lập kế hoạch và sắp xếp nguồn lực cho các phiên bản sắp tới.",
+        "Hỗ trợ đối tác khi cần thiết.",
+        "Viết tài liệu kỹ thuật cho các tính năng mới.",
+        "Đề xuất kế hoạch nâng cấp cho các tính năng lỗi thời.",
+        "Chịu trách nhiệm kỹ thuật cho mọi tính năng mà nhóm thực hiện."
       ],
-      "achievements_and_skills_gained": [
-        "Improve client-first mindset.",
-        "Redesign & improve the developer team workflow.",
-        "Improve leadership and team bonding skills.",
-        "Paid a lot of tech debt, restructured a lot of components to keep the code base more human-readable.",
-        "Enhance experience on upgrading an extremely obsolete system to the latest stack.",
-        "Researching skill in an environment that demands quick adaptation.",
-        "Self-taught many tech platforms.",
-        "Consolidate knowledge with an enterprise system."
+      "achievements": [
+        "Cải thiện tư duy hướng tới khách hàng.",
+        "Cải thiện kỹ năng lãnh đạo và gắn kết đội nhóm.",
+        "Trả nợ kỹ thuật, tái cấu trúc nhiều thành phần để mã nguồn dễ đọc hơn.",
+        "Nâng cao kinh nghiệm trong việc nâng cấp hệ thống cũ lên công nghệ mới.",
+        "Tự học nhiều nền tảng công nghệ.",
+        "Củng cố kiến thức về hệ thống doanh nghiệp."
       ],
-      "tech_stacks": [
-        ".NET Framework, .NET Core",
-        "Kibana with Elastic search for log",
+      "technologies": [
+        ".NET Framework",
+        ".NET Core",
+        "Kibana",
+        "Elastic Search",
         "DataDog",
         "Kubernetes",
         "CloudBees",
@@ -59,60 +43,107 @@
       ]
     },
     {
-      "period": "Oct 2021 - Sep 2023",
-      "company": "Grab - Project Grab Express on Web",
-      "role": "Team Leader, Fullstack Engineer",
-      "about_project": "Express Web is a Web portal that mainly focuses on Grab for Business, which needs a place to process a large number of orders every day. Provides tools like Shopify connect, Bulk Upload & Route Optimization for partners, Order tracing on Web.",
-      "main_responsibilities": [
-        "Closely work with PO and QA team to provide system design before sprint start.",
-        "Be on-call support for stakeholders when needed.",
-        "Tracing logs & support team members whenever there is an issue.",
-        "Write Engineer specs for new features.",
-        "Be Owner Engineer for every feature that team works on."
+      "position": "Team Leader, Fullstack Engineer",
+      "company": "Grab",
+      "location": "",
+      "duration": "Oct 2021 - Sep 2023",
+      "responsibilities": [
+        "Làm việc chặt chẽ với PO và QA để thiết kế hệ thống trước khi bắt đầu sprint.",
+        "Hỗ trợ đối tác khi cần thiết.",
+        "Theo dõi log và hỗ trợ thành viên nhóm khi có vấn đề.",
+        "Viết tài liệu kỹ thuật cho các tính năng mới.",
+        "Chịu trách nhiệm kỹ thuật cho mọi tính năng mà nhóm thực hiện."
       ],
-      "achievements_and_skills_gained": [
-        "Improve client-first mindset.",
-        "Improve leadership and team bonding skills.",
-        "Paid a lot of tech debt that had been there for a long time.",
-        "Consolidate knowledge with an enterprise system.",
-        "Great experience of building up a team from zero.",
-        "Contribute to the raise of over 5% usage of Grab Express Web, consistently every month, peaking at 20% after Bulk Upload launch.",
-        "Researching skill in an environment that demands quick adaptation.",
-        "Self-taught many tech platforms."
+      "achievements": [
+        "Cải thiện tư duy hướng tới khách hàng.",
+        "Cải thiện kỹ năng lãnh đạo và gắn kết đội nhóm.",
+        "Trả nợ kỹ thuật tồn đọng.",
+        "Củng cố kiến thức về hệ thống doanh nghiệp.",
+        "Kinh nghiệm xây dựng đội nhóm từ đầu.",
+        "Đóng góp tăng >5% sử dụng Grab Express Web hàng tháng, đỉnh điểm 20% sau khi ra mắt Bulk Upload.",
+        "Tự học nhiều nền tảng công nghệ."
       ],
-      "tech_stacks": [
-        "Golang, gRPC",
-        "React with Observable",
-        "Mono repo structure",
-        "Kibana with Elastic search for log",
+      "technologies": [
+        "Golang",
+        "gRPC",
+        "React với Observable",
+        "Cấu trúc Mono repo",
+        "Kibana với Elastic Search",
         "DataDog",
         "Kubernetes",
         "Gitlab CICD",
-        "Docusaurus for Open API documentation"
+        "Docusaurus cho tài liệu Open API"
       ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "C#",
+      "experience": "14 năm"
     },
     {
-      "period": "Jun 2021 - Now",
-      "company": "Kassom",
-      "role": "Tech Architect, Team Leader, Fullstack Engineer",
-      "about_project": "A startup company, I play a role as a Foundation Team member. An E-learning platform that allows tutors to create classes and courses, either as group classes or 1-1. Linked with Stripe for online payment and easier for tutors to withdraw money. Provides a place for tutors to build their available calendar, booking physical places or virtual rooms.",
-      "main_responsibilities": [
-        "Work as Developer and Team Leader.",
-        "Research and support team on their tasks.",
-        "Design Database & System architecture.",
-        "Solve problems when needed.",
-        "Monitor system health and resolve issues.",
-        "Develop members, organize seminars for guiding team on new approaches and technologies."
-      ],
-      "tech_stacks": [
-        ".NET Core MVC",
-        "Angular 18",
-        "Python",
-        "Github",
-        "Jenkins",
-        "Docker",
-        "Datadog"
-      ]
+      "name": "MVC – Web API",
+      "experience": "10 năm"
+    },
+    {
+      "name": "Entity Framework",
+      "experience": "9 năm"
+    },
+    {
+      "name": "Angular & AngularJs",
+      "experience": "7 năm"
+    },
+    {
+      "name": ".NET Core",
+      "experience": "8 năm"
+    },
+    {
+      "name": "Golang",
+      "experience": "2 năm"
+    },
+    {
+      "name": "Winform & Devexpress",
+      "experience": "6 năm"
+    },
+    {
+      "name": "React – Redux",
+      "experience": "6 năm"
+    },
+    {
+      "name": "Jquery & Javascript",
+      "experience": "7 năm"
+    },
+    {
+      "name": "MySQL & SQL Server",
+      "experience": "14 năm"
+    },
+    {
+      "name": "MongoDB",
+      "experience": "2 năm"
+    },
+    {
+      "name": "Docker",
+      "experience": "2.5 năm"
+    },
+    {
+      "name": "CI/CD",
+      "experience": "3 năm"
+    },
+    {
+      "name": "Azure Services",
+      "experience": "2 năm"
+    },
+    {
+      "name": "Micro-services system structure",
+      "experience": "3 năm"
+    },
+    {
+      "name": "Software Architecture Design",
+      "experience": "5 năm"
+    },
+    {
+      "name": "Team Lead role",
+      "experience": "6 năm"
     }
   ]
 }

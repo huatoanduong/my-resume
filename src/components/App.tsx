@@ -1,9 +1,20 @@
+
 import LeftPanelSection from "@components/LeftPanelSection";
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useStore } from 'store';
 import MainSection from "@components/MainSection";
+import { useData } from "apis/fetchData";
 
-const App: React.FC = () => {
+const App = () => {
+
+  const { setProfile } = useStore();
+
+  const { data, isLoading, error } = useData();
+
+  useEffect(() => {
+    // store.init();
+    setProfile(data);
+  }, [data]);
 
   return (
     <div className="app">

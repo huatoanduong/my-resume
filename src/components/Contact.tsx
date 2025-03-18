@@ -3,8 +3,8 @@ import React, { ReactNode } from 'react';
 
 const Contact = ({ }: ContactProps) => {
   return (
-    <LeftPanelBlock title="Education">
-      <h2>Education</h2>
+    <LeftPanelBlock title="Contact">
+      <h2>Contact</h2>
     </LeftPanelBlock>
   );
 };

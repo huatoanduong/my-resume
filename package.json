@@ -7,9 +7,12 @@
     "start": "yarn serve",
     "serve": "npx webpack serve --config webpack/webpack.dev.js",
     "build": "npx webpack --config webpack/webpack.prod.js",
-    "test-build": "http-server ./dist --port 3200 -o"
+    "test-build": "http-server ./host --port 3200 -o"
   },
   "dependencies": {
+    "@tanstack/react-query": "^5.68.0",
+    "@tanstack/react-query-devtools": "^5.68.0",
+    "axios": "^1.8.3",
     "lodash": "^4.17.21",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",

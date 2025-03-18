@@ -20,6 +20,7 @@
       "@config/*": ["config/*"],
       "@types/*": ["types/*"],
       "@styles/*": ["styles/*"],
+      "@apis/*": ["apis/*"],
     }
   },
   "include": ["src"]

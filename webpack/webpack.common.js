@@ -20,7 +20,7 @@ module.exports = {
     extensions: ['.ts', '.tsx', '.js', 'jsx', '.json'],
     alias: {
       '@components': path.resolve(srcDir, 'components'),
-      '@public': path.resolve(srcDir, 'public'),
+      '@public': path.resolve(rootDir, 'public'),
       '@config': path.resolve(srcDir, 'config'),
       '@types': path.resolve(srcDir, 'types'),
       '@styles': path.resolve(srcDir, 'styles'),
@@ -52,11 +52,12 @@ module.exports = {
         test: /\.s[ac]ss$/,
         use: ['style-loader', 'css-loader', 'sass-loader'],
       },
-      {
-        test: /\.json$/,
-        type: 'javascript/auto',
-        use: ['json-loader'],
-      },
+      // {
+      //   test: /\.json$/,
+      //   // type: 'javascript/auto',
+      //   // use: ['json-loader'],
+      //   type: 'asset/resource',
+      // },
       {
         test: /\.(png|jpg|jpeg|gif|svg)$/i,
         type: 'asset/resource',
@@ -67,10 +68,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './index.html',
     }),
-    // new CopyPlugin({
-    //   patterns: [
-    //     { from: 'public', to: 'public' },
-    //   ],
-    // }),
+    new CopyPlugin({
+      patterns: [
+        { from: 'public', to: 'public' },
+      ],
+    }),
   ],
 };

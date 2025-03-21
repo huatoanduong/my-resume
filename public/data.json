@@ -1,7 +1,7 @@
 {
   "name": "Dương Hứa Toàn (Tony)",
   "title": "Full-stack Developer",
-  "summary": "Với 14 năm làm việc trong ngành công nghệ thông tin, đảm nhiệm nhiều vị trí từ phân tích đến phát triển, quản lý đội nhóm, triển khai hệ thống, tôi có hiểu biết sâu sắc về kiến trúc phần mềm và vòng đời phát triển phần mềm (SDLC), giúp tôi học nhanh và dễ dàng các công nghệ mới.",
+  "summary": "With 14 years working in IT industry, also in charge of some positions from analyzing to developing, team managing, deploying system, I have a deep understanding about software architecture & SDLC, which enables me to learn new technologies fast and easily. And 90% of my working lifetime is for startups, so I would love to work in a result-oriented and innovative environment. Along with high-demanded fullstack environment, I have forged myself a self-teaching skill that enables me to be adaptive with a changeable and high-demand environment.",
   "contact": [
     {
       "type": "phone",
@@ -55,29 +55,34 @@
       "position": "Team Leader, Senior Engineer",
       "company": "GIC Singapore",
       "location": "Singapore",
-      "duration": "Sep 2023 - Hiện tại",
+      "about_project": "Provide a tool for external EIPs to submit data into internal system. Be the first step to validate all the input all the external in notify all stakeholders.",
+      "period": "Sep 2023 - Now",
       "responsibilities": [
-        "Làm việc chặt chẽ với BA và QA để thiết kế hệ thống trước khi bắt đầu sprint.",
-        "Duy trì dự án 6 năm tuổi mà không nâng cấp lên công nghệ mới nhất.",
-        "Lập kế hoạch và sắp xếp nguồn lực cho các phiên bản sắp tới.",
-        "Hỗ trợ đối tác khi cần thiết.",
-        "Viết tài liệu kỹ thuật cho các tính năng mới.",
-        "Đề xuất kế hoạch nâng cấp cho các tính năng lỗi thời.",
-        "Chịu trách nhiệm kỹ thuật cho mọi tính năng mà nhóm thực hiện."
+        "Closely work with BA and QA team to provide system design before sprint start.",
+        "Maintain 6 year old project without any upgrade to the latest tech stack.",
+        "Provide a plan and arrange resource for upcoming releases.",
+        "Be oncall support for partners when needed.",
+        "Support for every release schedule.",
+        "Tracing logs & support partners for production issue.",
+        "Write Engineer specs for new features.",
+        "Preparing the migration plan for integration with new system.",
+        "Propose an upgrade plan for all obsolete features.",
+        "Be Owner Engineer for every feature that team work on."
       ],
       "achievements": [
-        "Cải thiện tư duy hướng tới khách hàng.",
-        "Cải thiện kỹ năng lãnh đạo và gắn kết đội nhóm.",
-        "Trả nợ kỹ thuật, tái cấu trúc nhiều thành phần để mã nguồn dễ đọc hơn.",
-        "Nâng cao kinh nghiệm trong việc nâng cấp hệ thống cũ lên công nghệ mới.",
-        "Tự học nhiều nền tảng công nghệ.",
-        "Củng cố kiến thức về hệ thống doanh nghiệp."
+        "Improve client-first mindset.",
+        "Redesign & improve the developer team workflow.",
+        "Improve leadership and team bonding skills.",
+        "Paid lot of tech debt, restructured lot of components to keep the code base more human-readable.",
+        "Enhance experience on upgrading an extreme obsolete system to the latest stack.",
+        "Researching skill in an environment that demand us to be quick adaptive.",
+        "Self taught many tech platforms.",
+        "Consolidate knowledge with an enterprise system."
       ],
       "technologies": [
         ".NET Framework",
         ".NET Core",
-        "Kibana",
-        "Elastic Search",
+        "Kibana with Elastic search for log",
         "DataDog",
         "Kubernetes",
         "CloudBees",
@@ -87,105 +92,108 @@
     {
       "position": "Team Leader, Fullstack Engineer",
       "company": "Grab",
+      "about_project": "Express Web is a Web portal that mainly focus about Grab for Business which need a place to process a large amount of orders everyday. Provide tools like: Shopify connect, Bulk Upload & Route Optimization for partners, Order tracing on Web.",
       "location": "",
+      "url": "https://express.grab.com/en",
       "duration": "Oct 2021 - Sep 2023",
-      "responsibilities": [
-        "Làm việc chặt chẽ với PO và QA để thiết kế hệ thống trước khi bắt đầu sprint.",
-        "Hỗ trợ đối tác khi cần thiết.",
-        "Theo dõi log và hỗ trợ thành viên nhóm khi có vấn đề.",
-        "Viết tài liệu kỹ thuật cho các tính năng mới.",
-        "Chịu trách nhiệm kỹ thuật cho mọi tính năng mà nhóm thực hiện."
+      "responsibilities":[
+        "Closely work with PO and QA team to provide system design before sprint start.",
+        "Be oncall support for stakeholder when needed.",
+        "Tracing logs & support team members whenever there is an issue.",
+        "Write Engineer specs for new features.",
+        "Be Owner Engineer for every feature that team work on."
       ],
-      "achievements": [
-        "Cải thiện tư duy hướng tới khách hàng.",
-        "Cải thiện kỹ năng lãnh đạo và gắn kết đội nhóm.",
-        "Trả nợ kỹ thuật tồn đọng.",
-        "Củng cố kiến thức về hệ thống doanh nghiệp.",
-        "Kinh nghiệm xây dựng đội nhóm từ đầu.",
-        "Đóng góp tăng >5% sử dụng Grab Express Web hàng tháng, đỉnh điểm 20% sau khi ra mắt Bulk Upload.",
-        "Tự học nhiều nền tảng công nghệ."
+      "achievements":  [
+        "Improve client-first mindset.",
+        "Improve leadership and team bonding skills.",
+        "Paid lot of tech debt that be there for long time already.",
+        "Consolidate knowledge with an enterprise system.",
+        "Great experience of building up a team from zero.",
+        "Contribute to the raise of >5% usage of using Grab Express Web. constantly every month, the peek is 20%, after Bulk Upload launch.",
+        "Researching skill in an environment that demand us to be quick adaptive.",
+        "Self taught many tech platforms."
       ],
       "technologies": [
         "Golang",
         "gRPC",
-        "React với Observable",
-        "Cấu trúc Mono repo",
-        "Kibana với Elastic Search",
+        "React with Observable",
+        "Mono repo structure",
+        "Kibana with Elastic search for log",
         "DataDog",
         "Kubernetes",
         "Gitlab CICD",
-        "Docusaurus cho tài liệu Open API"
+        "Docusaurus for Open API documentation"
       ]
     }
   ],
   "skills": [
     {
       "name": "C#",
-      "experience": "14 năm"
+      "experience": "14 years"
     },
     {
       "name": "MVC – Web API",
-      "experience": "10 năm"
+      "experience": "10 years"
     },
     {
       "name": "Entity Framework",
-      "experience": "9 năm"
+      "experience": "9 years"
     },
     {
       "name": "Angular & AngularJs",
-      "experience": "7 năm"
+      "experience": "7 years"
     },
     {
       "name": ".NET Core",
-      "experience": "8 năm"
+      "experience": "8 years"
     },
     {
       "name": "Golang",
-      "experience": "2 năm"
+      "experience": "2 years"
     },
     {
       "name": "Winform & Devexpress",
-      "experience": "6 năm"
+      "experience": "6 years"
     },
     {
       "name": "React – Redux",
-      "experience": "6 năm"
+      "experience": "6 years"
     },
     {
       "name": "Jquery & Javascript",
-      "experience": "7 năm"
+      "experience": "7 years"
     },
     {
       "name": "MySQL & SQL Server",
-      "experience": "14 năm"
+      "experience": "14 years"
     },
     {
       "name": "MongoDB",
-      "experience": "2 năm"
+      "experience": "2 years"
     },
     {
       "name": "Docker",
-      "experience": "2.5 năm"
+      "experience": "2.5 years"
     },
     {
       "name": "CI/CD",
-      "experience": "3 năm"
+      "experience": "3 years"
     },
     {
       "name": "Azure Services",
-      "experience": "2 năm"
+      "experience": "2 years"
     },
     {
       "name": "Micro-services system structure",
-      "experience": "3 năm"
+      "experience": "3 years"
     },
     {
       "name": "Software Architecture Design",
-      "experience": "5 năm"
+      "experience": "5 years"
     },
     {
       "name": "Team Lead role",
-      "experience": "6 năm"
+      "experience": "6 years"
     }
   ]
 }

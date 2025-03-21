@@ -18,7 +18,7 @@ export const ExperienceItem = ({ experience }: ExperienceProps) => {
             <span className="ml-2">• {experience.location}</span>
           )}
         </div>
-        <div className="text-gray-500 text-sm">{experience.duration}</div>
+        <div className="text-gray-500 text-sm">{experience.period}</div>
       </div>
 
       <div className="mb-4">

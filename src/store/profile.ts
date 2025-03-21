@@ -98,8 +98,10 @@ export interface DeveloperProfile {
 export interface Experience {
   position: string;
   company: string;
-  location: string;
-  duration: string;
+  location?: string;
+  about_project: string;
+  url?: string;
+  period: string;
   responsibilities: string[];
   achievements: string[];
   technologies: string[];

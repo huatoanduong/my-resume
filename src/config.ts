@@ -7,6 +7,7 @@ import type {
 } from "./types/config";
 import { LinkPreset } from "./types/config";
 
+// Configuration for the main site settings including title, theme, banner, and more.
 export const siteConfig: SiteConfig = {
 	title: "Fuwari",
 	subtitle: "Demo Site",

@@ -680,6 +680,9 @@ config.codekit3
 .gradle
 /build/
 
+# generated types
+.astro/
+
 # Ignore Gradle GUI config
 gradle-app.setting
 
